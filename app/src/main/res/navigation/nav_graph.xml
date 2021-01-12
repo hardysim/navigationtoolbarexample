@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/blankFragmentA"
         android:name="com.example.navigation_toolbar_example.BlankFragmentA"
-        android:label="fragment_blank_a"
+        android:label="@string/hello_blank_fragment_a"
         tools:layout="@layout/fragment_blank_a">
         <action
             android:id="@+id/action_blankFragmentA_to_blankFragmentB"
@@ -17,6 +17,6 @@
     <fragment
         android:id="@+id/blankFragmentB"
         android:name="com.example.navigation_toolbar_example.BlankFragmentB"
-        android:label="fragment_blank_b"
+        android:label="@string/hello_blank_fragment_b"
         tools:layout="@layout/fragment_blank_b" />
 </navigation>
