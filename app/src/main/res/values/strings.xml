@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">navigation-toolbar-example</string>
+    <string name="hello_blank_fragment_a">Hello blank fragment A</string>
+    <string name="hello_blank_fragment_b">Hello blank fragment B</string>
 </resources>
