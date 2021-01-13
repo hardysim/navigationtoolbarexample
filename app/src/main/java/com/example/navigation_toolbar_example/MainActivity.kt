@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.navigation.findNavController
-import androidx.navigation.ui.NavigationUI.setupWithNavController
+import androidx.navigation.ui.NavigationUI.setupActionBarWithNavController
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,9 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        findViewById<Toolbar>(R.id.toolbar)?.apply {
-            setSupportActionBar(this)
-            setupWithNavController(this, findNavController(R.id.nav_host_fragment))
-        }
+        findViewById<Toolbar>(R.id.toolbar)?.let { setSupportActionBar(it) }
+        setupActionBarWithNavController(this, findNavController(R.id.nav_host_fragment))
     }
 }
